@@ -1,0 +1,149 @@
+body {
+    background: lightblue;
+    margin: 5px;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.wrapper {
+    margin: 0 auto;
+    box-shadow: 0 0 2px #cccccc;
+}
+
+/* ------------------------- Header ------------------------- */
+.header,
+.subheader,
+.footer {
+    padding: 10px;
+    background: #eaeaea;
+}
+
+.header-logo {
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.header img {
+    border-radius: 10px;
+}
+
+.header-title {
+    display: inline-block;
+    margin-left: 100px;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.subheader{
+    height: 22px;
+    padding: 5px;
+}
+
+.subheader input {
+    width: 60px;
+}
+
+.login {
+    float: right;
+}
+
+.clearfix {
+    height: 0px;
+    clear: both;
+    background: #e74c3c;
+}
+
+
+/* ------------------------- Menu ------------------------- */
+.main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #e5e5e5;
+}
+
+.main-menu > li {
+    position: relative;
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.main-menu a {
+    display: block;
+    margin-left: -1px;
+    padding: 8px 10px;
+    color: #0088cc;
+    border-left: 1px solid #e5e5e5;
+}
+
+.main-menu a:hover {
+    background: #f5f5f5;
+}
+
+.main-menu .sub-menu {
+    position: absolute;
+    left: 1px;
+    display: none;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #fcf8e3;
+}
+
+.main-menu .sub-menu a {
+    margin-bottom: -1px;
+    border: 1px solid #e5e5e5;
+}
+
+.main-menu > li:hover .sub-menu {
+    display: block;
+}
+
+
+/* ------------------------- Sidebar ------------------------- */
+.sidebar {
+    display: table-cell;
+    width: 150px;
+    padding: 10px 10px 5px 10px;
+    background: lightblue;
+    margin: 0 20px 20px 10px;
+    border-right: 2px solid grey;
+}
+
+.sidebar-list {
+    margin: 0 0 10px 0;
+    list-style: circle;
+}
+
+
+/* ------------------------- Content ------------------------- */
+.content {
+    display: table-cell;
+    min-height: 100px;
+    padding: 10px;
+}
+
+.content ul {
+    margin-left: 20px;
+    list-style: none;
+}
+
+.content p {
+    text-align: justify;
+}
+
+
+/* ------------------------- Footer ------------------------- */
+.footer-author {
+    float: left;
+    font-size: 12px;
+}
+
+.footer-moddate {
+    float: right;
+    font-size: 12px;
+}
