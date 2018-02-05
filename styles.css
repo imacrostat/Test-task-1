@@ -10,6 +10,7 @@ body {
 .wrapper {
     margin: 0 auto;
     box-shadow: 0 0 2px #cccccc;
+    max-width: 1000px;
 }
 
 /* ------------------------- Header ------------------------- */
@@ -31,7 +32,7 @@ body {
 
 .header-title {
     display: inline-block;
-    margin-left: 100px;
+    margin-left: 0px;
     font-size: 25px;
     text-align: center;
     vertical-align: bottom;
@@ -48,6 +49,8 @@ body {
 
 .login {
     float: right;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .clearfix {
@@ -105,13 +108,12 @@ body {
 
 
 /* ------------------------- Sidebar ------------------------- */
-.sidebar {
-    display: table-cell;
-    width: 150px;
+#sidebar {
+    float: none;
+    width: auto;
     padding: 10px 10px 5px 10px;
     background: lightblue;
     margin: 0 20px 20px 10px;
-    border-right: 2px solid grey;
 }
 
 .sidebar-list {
@@ -125,6 +127,8 @@ body {
     display: table-cell;
     min-height: 100px;
     padding: 10px;
+    border-top: 2px solid grey;
+    padding-bottom: 70px;
 }
 
 .content ul {
@@ -136,8 +140,22 @@ body {
     text-align: justify;
 }
 
+@media screen and (min-width: 480px) {
+    #sidebar {width: 160px; float: left;}
+    .content {border-left: 2px solid grey; border-top: 0;}
+    .header-title {margin-left: 100px;}
+}
+
 
 /* ------------------------- Footer ------------------------- */
+.footer {
+    position: fixed;
+    width: auto;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 10px;
+}
+
 .footer-author {
     float: left;
     font-size: 12px;
